@@ -1,9 +1,6 @@
-# virtual environment
+# .venv
 .venv
-
-# extensions
-*.pdf
-
-# temporary files
+# extensions and tmp files
 *~
 .DS_Store
+*.pdf
