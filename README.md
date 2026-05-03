@@ -1,0 +1,22 @@
+# ECG Preprocessing Pipeline
+Preprocessing pipeline for multichannel ECG signals.
+Removes spike artifacts, applies low-pass and notch filtering, and removes baseline wander and DC offset.
+
+## Usage
+
+### Shell script
+```bash
+./scripts/run_pipeline.sh <input_file> <output_dir>
+```
+
+### Python
+```bash
+python scripts/processing_pipeline.py --f <input_file> --out <output_dir>
+```
+
+## Arguments
+- `--f`   : path to input `.mat` file containing `ecg` and `fs` variables.
+- `--out` : path to output directory where preprocessed signal will be saved.
+
+## Author
+wpzamora97
